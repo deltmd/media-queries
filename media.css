@@ -20,7 +20,41 @@
     color: #fff;
     font-size: 18px;
     text-transform: uppercase;
+}
+.block{
+  widows: 100%;
+  margin-bottom: 20px;
+  height: 300px;
+  background: lightgray;
 
 }
+@media (min-width: 750px) {
+  .main-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .block{
+    width: 45%;
+  }
+  .HAM {
+    display: none;
+  }
+  .header ul {
+    display: flex;
+  }
+}
+@media (min-width: 900px) {
+  .block{
+    width: 25%;
+  }
+  .block:nth-child(even){
+    background: skyblue;
+  }
+  .block:nth-child(odd){
+    background: lightcoral;
+  }
+}
+@media(min-width:900px){
 
-
+}
